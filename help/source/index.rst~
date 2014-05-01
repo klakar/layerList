@@ -13,19 +13,6 @@ Here you can find the basic documentation for the Layer List plugin. Not very lo
 .. toctree::
    :maxdepth: 2
 
-.. index:: Scenario
-
-Scenario
-=================
-
-Lets say you are a lot of QGIS users that use a lot of layers from different shared resources, but it's allways a pain to add the layers you need at any given moment.
-
-You don't want to create QGIS project templates, because then you will need to keep track on those, and you also want to use your own project files independent of others.
-
-Well, with the Layer List plug-in you can create long lists with all your layers under simpler identifying names and share these lists among your selves.
-
-When you need to add that specific layer from the out-of-town WFS server that is a pain to remember the IP-address for, just klick "Add from Layer List", select the layer and you're done!
-
 .. index:: ShortVersion
 
 Short Version

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to the Layer List documentation! &mdash; layerlist 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="layerlist 0.1 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">layerlist 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-the-layer-list-documentation">
+<h1>Welcome to the Layer List documentation!<a class="headerlink" href="#welcome-to-the-layer-list-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<p>Here you can find the basic documentation for the Layer List plugin. Not very long, so just read on...</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+<div class="section" id="scenario">
+<span id="index-0"></span><h1>Scenario<a class="headerlink" href="#scenario" title="Permalink to this headline">¶</a></h1>
+<p>Lets say you are a lot of QGIS users that use a lot of layers from different shared resources, but it&#8217;s allways a pain to add the layers you need at any given moment.</p>
+<p>You don&#8217;t want to create QGIS project templates, because then you will need to keep track on those, and you also want to use your own project files independent of others.</p>
+<p>Well, with the Layer List plug-in you can create long lists with all your layers under simpler identifying names and share these lists among your selves.</p>
+<p>When you need to add that specific layer from the out-of-town WFS server that is a pain to remember the IP-address for, just klick &#8220;Add from Layer List&#8221;, select the layer and you&#8217;re done!</p>
+</div>
+<div class="section" id="short-version">
+<span id="index-1"></span><h1>Short Version<a class="headerlink" href="#short-version" title="Permalink to this headline">¶</a></h1>
+<p>Layer List gives you the ability to create a list with layers and then select from this list in other projects.</p>
+<p>Adding layers in QGIS isn&#8217;t very difficult, but some layers has a few required steps, and you allways need to know where the data is located.</p>
+<p>This plug-in lets you do this once and then save the layers under a more understandable name in a Layer Listfile (<a href="#id1"><span class="problematic" id="id2">*</span></a>.QLL).</p>
+<p>You can then share the file with collegues and friends, that perhaps is less adept when it comes to adding PostGIS data (for example).</p>
+<p>Use the two buttons. One to create lists based on your active layers and one to add layers from the currently selected Layer List.</p>
+</div>
+<div class="section" id="creating-layer-lists">
+<span id="index-2"></span><h1>Creating Layer Lists<a class="headerlink" href="#creating-layer-lists" title="Permalink to this headline">¶</a></h1>
+<p>It&#8217;s absolutely posible to write lists in a text editor, but the built in tool is easier.</p>
+<p>Just add the layers you want to include in the list to a QGIS project and make sure only layers you want to save to the list is active (visible).</p>
+<p>Also, change any names of the layers to something easier to understand and relate to later on.</p>
+<p>Select the Create Layer List tool with the button or through the menu.</p>
+<p>Check that all layers are present in the list and hit &#8220;Save&#8221;. You will be asked where to save the file and the default file extension is <a href="#id3"><span class="problematic" id="id4">*</span></a>.QLL. You can use any extension you want, like <a href="#id5"><span class="problematic" id="id6">*</span></a>.TXT or <a href="#id7"><span class="problematic" id="id8">*</span></a>.LayerList, but <a href="#id9"><span class="problematic" id="id10">*</span></a>.QLL is standard.</p>
+<p>You will also be asked if you want to use the created layer list as your currently active list. Just hit &#8220;No&#8221; if you want to keep your old one.</p>
+<p>When the list is generated the layers are presented in reverse order. This is because when you select multiple layers to add later on, they are added in a top down order. Therefor the layer at the top of the list will potentially end up at the bottom in QGIS. So just arrange the layers in the order you want them to appear as standard before you create the list.</p>
+</div>
+<div class="section" id="adding-layers-from-lists">
+<span id="index-3"></span><h1>Adding Layers from Lists<a class="headerlink" href="#adding-layers-from-lists" title="Permalink to this headline">¶</a></h1>
+<p>The first time you klick the Add from Layer List button or menu item you will find an empty list.</p>
+<p>To select a default list you click the three dot button (...) and select the appropriate <a href="#id11"><span class="problematic" id="id12">*</span></a>.QLL file.</p>
+<p>The list will populate with layers and you can make multiple selections and add the layer/layers to your project.</p>
+<p>The selected Layer List will stay as your current list untill you change it, even if you shut QGIS down.</p>
+</div>
+<div class="section" id="layer-list-syntax">
+<span id="index-4"></span><h1>Layer List Syntax<a class="headerlink" href="#layer-list-syntax" title="Permalink to this headline">¶</a></h1>
+<p>The list files are essentially ordinary textfiles (utf-8) and they can be edited in any text editor.</p>
+<p>You can combine several files into new ones just by copying and pasting rows. Keep in mind that the top row in the files are there as a file check, and without it the plug-in will not open the list.</p>
+<p>The layers consist of three parts:</p>
+<ul class="simple">
+<li>A layer provider: OGR, WFS, WMS, Postgres, GPX, GDAL, etc</li>
+<li>A layer name: Any text (no commas) that will be used in the lists and as layer name in QGIS</li>
+<li>The layer source: This is either a file path and name or a connection command for a service or database</li>
+</ul>
+</div>
+<div class="section" id="localization">
+<h1>Localization<a class="headerlink" href="#localization" title="Permalink to this headline">¶</a></h1>
+<p>The ambition is to have the plug-in fully adapted to the most common languages, and if your language is missing, it isn&#8217;t very hard to include a translation (standard i18n).</p>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to the Layer List documentation!</a></li>
+<li><a class="reference internal" href="#scenario">Scenario</a></li>
+<li><a class="reference internal" href="#short-version">Short Version</a></li>
+<li><a class="reference internal" href="#creating-layer-lists">Creating Layer Lists</a></li>
+<li><a class="reference internal" href="#adding-layers-from-lists">Adding Layers from Lists</a></li>
+<li><a class="reference internal" href="#layer-list-syntax">Layer List Syntax</a></li>
+<li><a class="reference internal" href="#localization">Localization</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">layerlist 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Klas Karlsson.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
