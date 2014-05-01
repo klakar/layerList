@@ -72,8 +72,13 @@ You must reload the plug-in or restart QGIS first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="layerlist.py" line="207"/>
+        <source>Do you want to use this file as new current List File?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="layerlist.py" line="234"/>
-        <source>%s &#xc3;&#xa4;r inte ett giltigt lager:
+        <source>%s is not a valid layer:
  %s</source>
         <translation type="unfinished"></translation>
     </message>

@@ -231,7 +231,7 @@ class layerList:
 		if layerProvider[index].upper() in "WMS RASTER GDAL WCS":
 			layer = QgsRasterLayer(layerSource[index], layerName[index], layerProvider[index])
 		if not layer.isValid():
-			QMessageBox.information(self.iface.mainWindow(),QApplication.translate("LayerList",u"Error!"), QApplication.translate("LayerList",u"%s is not a valid layer:\n %s") % (layerName[index], layerSource[index]))
+			QMessageBox.information(self.iface.mainWindow(),QApplication.translate("LayerList",u"Error!"), QApplication.translate("LayerList",u"%s är inte ett giltigt lager:\n %s") % (layerName[index], layerSource[index]))
 			break
 		QgsMapLayerRegistry.instance().addMapLayer(layer)
 

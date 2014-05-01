@@ -89,8 +89,7 @@ Du måste ladda om tillägget eller starta om QGIS först.</translation>
         <location filename="layerlist.py" line="234"/>
         <source>%s is not a valid layer:
  %s</source>
-        <translation>%s är inte ett giltigt lager:
- %s</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
