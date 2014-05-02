@@ -12,8 +12,22 @@ Here you can find the basic documentation for the Layer List plugin. Not very lo
 
 .. toctree::
    :maxdepth: 2
+   
 
-.. index:: ShortVersion
+.. index:: Scenario
+
+Scenario
+=================
+
+Lets say you are a lot of QGIS users that use a lot of layers from different shared resources, but it's allways a pain to add the layers you need at any given moment.
+
+You don't want to create QGIS project templates, because then you will need to keep track on those, and you also want to use your own project files independent of others.
+
+Well, with the Layer List plug-in you can create long lists with all your layers under simpler identifying names and share these lists among your selves.
+
+When you need to add that specific layer from the out-of-town WFS server that is a pain to remember the IP-address for, just klick "Add from Layer List", select the layer and you're done!
+
+.. index:: Short Version
 
 Short Version
 ==================
@@ -28,7 +42,7 @@ You can then share the file with collegues and friends, that perhaps is less ade
 
 Use the two buttons. One to create lists based on your active layers and one to add layers from the currently selected Layer List.
 
-.. index:: CreateLayerLists
+.. index:: Create Layer Lists
 
 Creating Layer Lists
 =====================
@@ -47,7 +61,7 @@ You will also be asked if you want to use the created layer list as your current
 
 When the list is generated the layers are presented in reverse order. This is because when you select multiple layers to add later on, they are added in a top down order. Therefor the layer at the top of the list will potentially end up at the bottom in QGIS. So just arrange the layers in the order you want them to appear as standard before you create the list.
 
-.. index:: AddLayersFromList
+.. index:: Add Layers From Lists
 
 Adding Layers from Lists
 =========================
@@ -81,10 +95,4 @@ Localization
 
 The ambition is to have the plug-in fully adapted to the most common languages, and if your language is missing, it isn't very hard to include a translation (standard i18n).
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 

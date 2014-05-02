@@ -1,0 +1,34 @@
+[OPTIONS]
+Binary TOC=No
+Binary Index=No
+Compiled file=templateclassdoc.chm
+Contents file=templateclassdoc.hhc
+Default Window=templateclassdoc
+Default topic=index.html
+Display compile progress=No
+Full text search stop list file=templateclassdoc.stp
+Full-text search=Yes
+Index file=templateclassdoc.hhk
+Language=0x409
+Title=layerlist 0.1 documentation
+
+[WINDOWS]
+templateclassdoc="layerlist 0.1 documentation","templateclassdoc.hhc","templateclassdoc.hhk","index.html","index.html",,,,,0x63520,220,0x10384e,[0,0,1024,768],,,,,,,0
+
+[FILES]
+index.html
+genindex.html
+_static\pygments.css
+_static\default.css
+_static\up.png
+_static\comment-close.png
+_static\down-pressed.png
+_static\minus.png
+_static\plus.png
+_static\comment-bright.png
+_static\down.png
+_static\comment.png
+_static\file.png
+_static\ajax-loader.gif
+_static\basic.css
+_static\up-pressed.png
