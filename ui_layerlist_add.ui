@@ -112,6 +112,22 @@
     <string>...</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="btnHelp">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Show Plug-In help files (HTML).</string>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>

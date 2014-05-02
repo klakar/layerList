@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui_layerlist_create.ui'
 #
-# Created: Thu May  1 15:45:21 2014
+# Created: Fri May  2 19:38:28 2014
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -45,6 +45,9 @@ class Ui_layerListCreator(object):
         self.listWidget.setGeometry(QtCore.QRect(15, 31, 371, 201))
         self.listWidget.setSelectionMode(QtGui.QAbstractItemView.NoSelection)
         self.listWidget.setObjectName(_fromUtf8("listWidget"))
+        self.btnHelp = QtGui.QPushButton(layerListCreator)
+        self.btnHelp.setGeometry(QtCore.QRect(10, 250, 21, 21))
+        self.btnHelp.setObjectName(_fromUtf8("btnHelp"))
 
         self.retranslateUi(layerListCreator)
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), layerListCreator.accept)
@@ -54,4 +57,6 @@ class Ui_layerListCreator(object):
     def retranslateUi(self, layerListCreator):
         layerListCreator.setWindowTitle(_translate("layerListCreator", "Layer List Creator", None))
         self.lblCreateList.setText(_translate("layerListCreator", "Saving layers to list...", None))
+        self.btnHelp.setToolTip(_translate("layerListCreator", "Show Plug-In help files (HTML).", None))
+        self.btnHelp.setText(_translate("layerListCreator", "?", None))
 

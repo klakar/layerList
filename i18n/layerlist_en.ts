@@ -13,32 +13,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="184"/>
+        <location filename="layerlist.py" line="188"/>
         <source>&amp;Layer List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="125"/>
+        <location filename="layerlist.py" line="129"/>
         <source>Open File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="125"/>
+        <location filename="layerlist.py" line="129"/>
         <source>QGIS Layer Lists (*.qll);; All files (*.*)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="159"/>
+        <location filename="layerlist.py" line="163"/>
         <source>Layer List Missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="160"/>
+        <location filename="layerlist.py" line="164"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="153"/>
+        <location filename="layerlist.py" line="157"/>
         <source>Layer List file is damaged 
  First row in the file must be:
 # Layer List - QGIS Plugin by Klas Karlsson
@@ -49,7 +49,7 @@ Reload the plug-in or restart QGIS.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="160"/>
+        <location filename="layerlist.py" line="164"/>
         <source>This file could not be read.
 Try another file.
 
@@ -57,27 +57,27 @@ You must reload the plug-in or restart QGIS first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="201"/>
+        <location filename="layerlist.py" line="205"/>
         <source>Save File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="207"/>
+        <location filename="layerlist.py" line="211"/>
         <source>New List file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="234"/>
+        <location filename="layerlist.py" line="238"/>
         <source>Error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="207"/>
+        <location filename="layerlist.py" line="211"/>
         <source>Do you want to use this file as new current List File?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layerlist.py" line="234"/>
+        <location filename="layerlist.py" line="238"/>
         <source>%s is not a valid layer:
  %s</source>
         <translation type="unfinished"></translation>
@@ -86,36 +86,56 @@ You must reload the plug-in or restart QGIS first.</source>
 <context>
     <name>layerListAdd</name>
     <message>
-        <location filename="ui_layerlist_add.py" line="74"/>
+        <location filename="ui_layerlist_add.py" line="77"/>
         <source>Add layers from list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_layerlist_add.py" line="75"/>
+        <location filename="ui_layerlist_add.py" line="78"/>
         <source>Select layers from list...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_layerlist_add.py" line="76"/>
+        <location filename="ui_layerlist_add.py" line="79"/>
         <source>No Layer List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_layerlist_add.py" line="77"/>
+        <location filename="ui_layerlist_add.py" line="80"/>
         <source>...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="ui_layerlist_add.py" line="81"/>
+        <source>Show Plug-In help files (HTML).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="ui_layerlist_add.py" line="82"/>
+        <source>?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>layerListCreator</name>
     <message>
-        <location filename="ui_layerlist_create.py" line="55"/>
+        <location filename="ui_layerlist_create.py" line="58"/>
         <source>Layer List Creator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_layerlist_create.py" line="56"/>
+        <location filename="ui_layerlist_create.py" line="59"/>
         <source>Saving layers to list...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="ui_layerlist_create.py" line="60"/>
+        <source>Show Plug-In help files (HTML).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="ui_layerlist_create.py" line="61"/>
+        <source>?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

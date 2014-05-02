@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui_layerlist_add.ui'
 #
-# Created: Thu May  1 15:45:21 2014
+# Created: Fri May  2 19:38:28 2014
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -64,6 +64,9 @@ class Ui_layerListAdd(object):
         font.setWeight(75)
         self.btnFindList.setFont(font)
         self.btnFindList.setObjectName(_fromUtf8("btnFindList"))
+        self.btnHelp = QtGui.QPushButton(layerListAdd)
+        self.btnHelp.setGeometry(QtCore.QRect(10, 290, 21, 21))
+        self.btnHelp.setObjectName(_fromUtf8("btnHelp"))
 
         self.retranslateUi(layerListAdd)
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), layerListAdd.accept)
@@ -75,4 +78,6 @@ class Ui_layerListAdd(object):
         self.lblReadList.setText(_translate("layerListAdd", "Select layers from list...", None))
         self.lblListFile.setText(_translate("layerListAdd", "No Layer List", None))
         self.btnFindList.setText(_translate("layerListAdd", "...", None))
+        self.btnHelp.setToolTip(_translate("layerListAdd", "Show Plug-In help files (HTML).", None))
+        self.btnHelp.setText(_translate("layerListAdd", "?", None))
 
