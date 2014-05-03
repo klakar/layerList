@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/layerlist" >
-        <file>icon1.png</file>
-	<file>icon2.png</file>
-    </qresource>
-</RCC>
