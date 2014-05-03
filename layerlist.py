@@ -99,7 +99,7 @@ class layerList:
 
     # Show Help files
     def showHelp(self):
-	showPluginHelp()
+	showPluginHelp(filename="help/index")
 
 
     # Copy active layers from QGIS to a list widget and create a string variable ready to save...
