@@ -13,7 +13,7 @@ name=Layer List
 qgisMinimumVersion=2.0
 description=Manage common layers in lists, making it easier and quicker to add them to projects.
 about=You can create a list from active layers, save the list, share it with others. You can also select a default list for your application that is always loaded when you start QGIS. The layer list is a *.qll file in text format, that you can edit and combine if you need to.
-version=0.3
+version=0.3.1
 author=Klas Karlsson
 email=klaskarlsson@hotmail.com
 
@@ -23,7 +23,8 @@ email=klaskarlsson@hotmail.com
 category=Layers
 
 # Uncomment the following line and add your changelog entries:
-changelog=0.3 Removed Experimantal Flag
+changelog=0.3.1 Fixed Swedish translation
+	0.3 Removed Experimantal Flag
 	0.2 Added Help Button
 	0.1 Initial version
 
